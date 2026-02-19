@@ -1,0 +1,7 @@
+Practica hecha por Alumno: Mario Alejandro Hernandez Lopez.
+
+Objetivo de la practica: Crear una clase con constructor, getters y setters en PHP.
+
+Descripcion de la clase creada: Cree una clase llamada Usuario que recibe los parametros $nombre y $correo, cree en ella un constructor __construct donde converti los parametros en atributos privados de la clase, ademas cree 4 metodos en la clase 2 getters que retornan los atributos this->nombre y this->correo y 2 setters que permiten cambiar el valor de ambos atributos.
+
+Instrucciones de ejecucion: Primero, se ejecuta el require_once 'Usuario.php' para llamar al archivo donde se encuentra la clase Usuario, despues se crea el objeto $objUsuario01 dandole los valores "Mario Hernandez" y "sams24484@gmail.com" como parametros de $nombre y $correo, luego la clase utiliza el constructor para convertir los parametros en los atributos de la clase this->nombre y this->correo, despues se ejecuta el metodo getNombre() para retornar el atributo this->nombre a una variable $nombre y el metodo getCorreo() para retornar el atributo this->correo a una variable $correo, al final se ejecutan dos echos para imprimir en el navegador las variables $nombre y $correo.
