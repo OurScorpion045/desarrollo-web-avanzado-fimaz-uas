@@ -3,6 +3,7 @@
     require_once 'clases/Admin.php';
     require_once 'clases/Alumno.php';
     require_once 'clases/Invitado.php';
+    //Se importan los archivos que incluyen las clases Admin, Alumno e Invitado para usarlos para crear los objetos necesarios
 
     $usuarios = [];
 
