@@ -19,7 +19,7 @@ class Database {
         }
     }
 
-    function getConexion() {
+    function getConnection() {
         return $this->connection;
     }
 
