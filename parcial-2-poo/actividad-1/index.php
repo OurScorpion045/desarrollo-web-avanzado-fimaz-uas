@@ -22,6 +22,7 @@ if (isset($_GET['editar'])) {
     $productoEditar = $controller->obtenerPorId($idEditar);
 }
 
+// Guardar o Actualizar
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = !empty($_POST['id']) ? $_POST['id'] : null;
     $nombre = trim($_POST['nombre']);
