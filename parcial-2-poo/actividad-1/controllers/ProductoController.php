@@ -42,11 +42,11 @@ class ProductoController {
         $sql = "UPDATE productos SET nombre = :nombre, descripcion = :descripcion, existencia = :existencia, precio = :precio WHERE id = :id";
         $stmt = $this->connection->prepare($sql);
 
-        $stmt->bindValues(":id", $producto->getId(), PDO::PARAM_INT);
-        $stmt->bindValues(":nombre", $producto->getNombre());
-        $stmt->bindValues(":descripcion", $producto->getDescripcion());
-        $stmt->bindValues(":existencia", $producto->getExistencia(), PDO::PARAM_INT);
-        $stmt->bindValues(":precio", $producto->getPrecio());
+        $stmt->bindValue(":id", $producto->getId(), PDO::PARAM_INT);
+        $stmt->bindValue(":nombre", $producto->getNombre());
+        $stmt->bindValue(":descripcion", $producto->getDescripcion());
+        $stmt->bindValue(":existencia", $producto->getExistencia(), PDO::PARAM_INT);
+        $stmt->bindValue(":precio", $producto->getPrecio());
 
         return $stmt->execute();
     }
