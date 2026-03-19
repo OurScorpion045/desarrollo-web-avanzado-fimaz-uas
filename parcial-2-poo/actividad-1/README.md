@@ -1,5 +1,7 @@
 Actividad 1 - Parcial 2
 
+Alumno: Mario Alejandro Hernandez Lopez 3-1 LISIV
+
 Objetivo de la practica: Crear un sistema CRUD de productos de una tienda utilizando PHP + base de datos SQL, clases PHP y Encapsulacion basica
 
 Requisitos: PHP 8, Servidor Apache XAMPP, Servidor SQL XAMPP, PHPMyAdmin
