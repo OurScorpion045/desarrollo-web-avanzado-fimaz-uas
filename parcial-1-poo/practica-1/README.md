@@ -1,6 +1,6 @@
 Practica hecha por Alumno: Mario Alejandro Hernandez Lopez.
 
-Objetivo de la practica: Crear una clase con constructor, getters y setters en PHP.
+Objetivo de la practica: Crear una clase con constructor, getters y setters y encapsulamiento en PHP.
 
 Descripcion de la clase creada: Cree una clase llamada Usuario que recibe los parametros $nombre y $correo, cree en ella un constructor __construct donde converti los parametros en atributos privados de la clase, ademas cree 4 metodos en la clase 2 getters que retornan los atributos this->nombre y this->correo y 2 setters que permiten cambiar el valor de ambos atributos.
 
