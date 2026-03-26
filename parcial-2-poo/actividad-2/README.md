@@ -15,3 +15,4 @@ Instrucciones de ejecucion:
 3. Entra a localhost/phpmyadmin en tu navegador e importa la base de datos de la actividad del archivo phppdobd.sql
 4. Introduce la ruta de ejecucion antes mostrada en el navegador para entrar a la practica
 
+Repositorio Github de la practica: https://github.com/OurScorpion045/desarrollo-web-avanzado-fimaz-uas/tree/main/parcial-2-poo/actividad-2
