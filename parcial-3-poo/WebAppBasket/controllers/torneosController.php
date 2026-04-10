@@ -1,5 +1,4 @@
 <?php
-
     require_once "../../models/torneosModel.php";
 
     class torneosController {
@@ -29,6 +28,10 @@
             return ($this->model->readOne($id) != false) ? $this->model->readOne($id) : header("Location: admin.php");
         }
 
+        //Método que manda llamar la función update del modelo.
+        public function updateTorneo($id, $nombreTorneo, $organizador, $patrocinadores, $sede, $categoria, $premio1, $premio2, $premio3, $otroPremio) {
+            return ($this->model->update($id, $nombreTorneo, $organizador, $patrocinadores, $sede, $categoria, $premio1, $premio2, $premio3, $otroPremio)) != false ? header("Location: readOneTorneo.php?id=".$id) : header("Location: readAllTorneos.php"); 
+        }
     }
 
 

@@ -29,8 +29,9 @@
                         <th><?= $row['nombreTorneo'] ?></th>
                         <th><?= $row['organizador'] ?></th>
                         <th>
-                            ACCIONES: LEER UNO, EDITAR, ELIMINAR,
+                            ACCIONES: EDITAR, ELIMINAR,
                             <a href="readOneTorneo.php?id=<?= $row['id'] ?>" class="btn btn-primary">Consultar</a>
+                            <a href="updateTorneo.php?id=<?= $row['id'] ?>" class="btn btn-primary">Editar</a>
                         </th>
                     </tr>
                     <?php endforeach; ?>
