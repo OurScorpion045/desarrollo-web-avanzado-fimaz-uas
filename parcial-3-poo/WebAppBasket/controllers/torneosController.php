@@ -32,6 +32,11 @@
         public function updateTorneo($id, $nombreTorneo, $organizador, $patrocinadores, $sede, $categoria, $premio1, $premio2, $premio3, $otroPremio) {
             return ($this->model->update($id, $nombreTorneo, $organizador, $patrocinadores, $sede, $categoria, $premio1, $premio2, $premio3, $otroPremio)) != false ? header("Location: readOneTorneo.php?id=".$id) : header("Location: readAllTorneos.php"); 
         }
+
+        //Método que manda a llamar la funcion delete del modelo
+        public function delete($id) {
+            return ($this->model->delete($id)) ? header("Location: readAllTorneos.php") : header("Location: readOneTorneo.php?id=".$id);
+        }
     }
 
 

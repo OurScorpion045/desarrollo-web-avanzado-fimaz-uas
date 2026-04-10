@@ -82,6 +82,14 @@
 
             return ($statement->execute()) ? $id : false;
         }
+
+        //Método para eliminar un torneo.
+        public function delete($id) {
+            $statement = $this->PDO->prepare("DELETE FROM torneos WHERE id = :id limit 1");
+            $statement->bindParam(":id", $id);
+            return ($statement->execute()) ? true : false;
+        }
+
     }
 
 ?>
