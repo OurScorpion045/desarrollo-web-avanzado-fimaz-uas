@@ -51,6 +51,12 @@
             // Se verifica con un shorthand if si el password candidato es correcto
             return (password_verify($passwordCandidate, $passwordEncrypted)) ? true : false;
         }
+
+        //Crearemos el método para listar todos los torneos
+        public function read() {
+            $statement = $this->PDO->prepare("SELECT * FROM torneos");
+            return ($statement->execute()) ? $statement->fetchAll() : false;
+        }
     }
 
 ?>
