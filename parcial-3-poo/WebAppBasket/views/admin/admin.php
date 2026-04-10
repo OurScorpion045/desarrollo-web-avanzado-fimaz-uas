@@ -30,8 +30,9 @@
                     </div>
                     <div class="card-body">
                     
-
-
+                        <a href="readAllTorneos.php" class="btn btn-primary">
+                            <img src="../img/lista-torneo.jpg" alt="Listar torneo." width="200" height="180">
+                        </a>
 
                     </div>
                     </div>
