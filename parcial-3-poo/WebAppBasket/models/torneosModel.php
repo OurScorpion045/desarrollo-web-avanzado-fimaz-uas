@@ -14,9 +14,9 @@
             $this->PDO = $conecction->connect();
         }
 
-        public function insert($nombreTorneo, $organizador, $patrocinadores, $sede, $categoria, $premio1, $premio2, $premio3, $usuario, $contrasena) {
+        public function insert($nombreTorneo, $organizador, $patrocinadores, $sede, $categoria, $premio1, $premio2, $premio3, $otroPremio, $usuario, $contrasena) {
             // Iniciamos declarando el statement y preparando la consulta
-            $statement = $this->PDO->prepare("INSERT INTO torneos VALUES(null, :nombreTorneo, :organizador, :patrocinadores, :sede, :categoria, :premio1, :premio2, :premio3, :usuario, :contrasena)");
+            $statement = $this->PDO->prepare("INSERT INTO torneos VALUES(null, :nombreTorneo, :organizador, :patrocinadores, :sede, :categoria, :premio1, :premio2, :premio3, :otroPremio, :usuario, :contrasena)");
 
             //Encriptar contraseña asignada al organizador del torneo
             $contrasena = $this->passwordEncrypyt($contrasena);
@@ -29,6 +29,7 @@
             $statement->bindParam("premio1", $premio1);
             $statement->bindParam("premio2", $premio2);
             $statement->bindParam("premio3", $premio3);
+            $statement->bindParam(":otroPremio", $otroPremio);
             $statement->bindParam(":usuario", $usuario);
             $statement->bindParam(":contrasena", $contrasena);
             

@@ -14,8 +14,8 @@
         //Si los datos se guardan redireccionara al usuario a la pantalla principal de inicio
         //De lo contrario se mantendra en la pantalla del formulario de captura de datos del torneo
 
-        public function saveTorneo($nombreTorneo, $organizador, $patrocinadores, $sede, $categoria, $premio1, $premio2, $premio3, $usuario, $contrasena) {
-            $id = $this->model->insert($nombreTorneo, $organizador, $patrocinadores, $sede, $categoria, $premio1, $premio2, $premio3, $usuario, $contrasena);
+        public function saveTorneo($nombreTorneo, $organizador, $patrocinadores, $sede, $categoria, $premio1, $premio2, $premio3, $otroPremio, $usuario, $contrasena) {
+            $id = $this->model->insert($nombreTorneo, $organizador, $patrocinadores, $sede, $categoria, $premio1, $premio2, $premio3, $otroPremio, $usuario, $contrasena);
             return ($id != false) ? header("Location: mainTorneos.php") : header("Location: frmTorneos.php");
         }
     }
