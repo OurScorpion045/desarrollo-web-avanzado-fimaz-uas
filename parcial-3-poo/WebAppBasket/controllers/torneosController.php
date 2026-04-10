@@ -18,6 +18,13 @@
             $id = $this->model->insert($nombreTorneo, $organizador, $patrocinadores, $sede, $categoria, $premio1, $premio2, $premio3, $otroPremio, $usuario, $contrasena);
             return ($id != false) ? header("Location: admin.php") : header("Location: frmTorneos.php");
         }
+
+        // Metodo que manda ejecutar la funcion read del modelo del Torneo.
+        public function readTorneo() {
+            return ($this->model->read()) ? $this->model->read() : false;
+        }
+
     }
+
 
 ?>
