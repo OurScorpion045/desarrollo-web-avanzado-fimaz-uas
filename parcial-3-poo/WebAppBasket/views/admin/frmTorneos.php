@@ -75,6 +75,10 @@
                         <input type="text" name="txtContrasena" id="contrasena" class="form-control">
                     </div>
                 </div>
+                <div class="col mb-3">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <a href="admin.php" class="btn btn-danger">Cancelar</a>
+                </div>
             </form>
         </div>
         <div class="card-footer text-body-secondary">
